@@ -1,0 +1,87 @@
+.dmxParallaxSlider-fancy {
+	position: relative;
+}
+
+.dmxParallaxSlider-fancy .dmxParallaxSlider {
+	background: #fff;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.dmxParallaxSlider-fancy .dmxParallaxSliderLoading {
+	background: #fff url(loading.gif) no-repeat 50% 50%;
+}
+
+.dmxParallaxSlider-fancy .dmxParallaxSliderNav {
+	background: #000;
+	background: rgba(0,0,0,0.8);
+	/*background: -webkit-linear-gradient(top, #ddd, #bbb);
+	background: -moz-linear-gradient(top, #ddd, #bbb);
+	background: -ms-linear-gradient(top, #ddd, #bbb);
+	background: -o-linear-gradient(top, #ddd, #bbb);
+	background: linear-gradient(to bottom, #ddd, #bbb);*/
+	/*-webkit-border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	-ms-border-radius: 0 0 6px 6px;
+	-o-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;*/
+	position: absolute;
+	line-height: 46px;
+	height: 46px;
+	bottom: 10px;
+	left: -10px;
+	right: -10px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.dmxParallaxSlider-fancy .dmxParallaxSliderNav:before,
+.dmxParallaxSlider-fancy .dmxParallaxSliderNav:after {
+	content: " ";
+	position: absolute;
+	z-index: 1;
+	top: -10px;
+	border-bottom: 10px solid #000;
+}
+
+.dmxParallaxSlider-fancy .dmxParallaxSliderNav:before {
+	border-left: 10px solid transparent;
+	left: 0;
+}
+
+.dmxParallaxSlider-fancy .dmxParallaxSliderNav:after {
+	border-right: 10px solid transparent;
+	right: 0;
+}
+
+.dmxParallaxSlider-fancy .dmxParallaxSliderControlNav,
+.dmxParallaxSlider-fancy .dmxParallaxSliderDirectionNav {
+	padding: 0 10px;
+}
+
+.dmxParallaxSlider-fancy .dmxParallaxSliderControlNav {
+	float: left;
+}
+
+.dmxParallaxSlider-fancy .dmxParallaxSliderDirectionNav {
+	float: right;
+}
+
+.dmxParallaxSlider-fancy .dmxParallaxSliderControlNav a,
+.dmxParallaxSlider-fancy .dmxParallaxSliderDirectionNav a {
+	vertical-align: middle;
+	margin: 0 5px;
+	font-family: Arial;
+	font-size: 11px;
+	border-radius: 2px;
+	padding: 3px 6px;
+	color: #fff;
+}
+
+.dmxParallaxSlider-fancy .dmxParallaxSliderControlNav a:hover,
+.dmxParallaxSlider-fancy .dmxParallaxSliderDirectionNav a:hover {
+	background: #000;
+}
+
+.dmxParallaxSlider-fancy .dmxParallaxSliderControlNav a.dmxParallaxSliderCurrent {
+	background: #fff;
+	color: #000;
+}
